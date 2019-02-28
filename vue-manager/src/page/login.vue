@@ -59,6 +59,7 @@
         this.loading = true;
         this.$https.post('/web/login', this.loginForm, this).then((data) => {
           console.log(data);
+          sessionStorage.setItem('loginName',data.loginName);
           this.$router.push('manage')
         },(data)=>{
           this.params.nonce = data.data?data.data:null;

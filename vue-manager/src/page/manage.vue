@@ -7,7 +7,7 @@
           <el-submenu index="2">
             <template slot="title"><i class="el-icon-document"></i>数据统计</template>
             <el-menu-item index="goodsList">商品统计</el-menu-item>
-            <el-menu-item index="IntoManagement">入库统计</el-menu-item>
+            <el-menu-item index="intoManagement">入库统计</el-menu-item>
             <el-menu-item index="OutputManagement">出库统计</el-menu-item>
             <el-menu-item index="InventoryManagement">库存统计</el-menu-item>
             <el-menu-item index="OrderList">订单统计</el-menu-item>
@@ -15,8 +15,7 @@
           <el-submenu index="3">
             <template slot="title"><i class="el-icon-plus"></i>商品管理</template>
             <el-menu-item index="addGoods">添加商品</el-menu-item>
-            <el-menu-item index="addShop">商品入库</el-menu-item>
-            <el-menu-item index="addShop">商品出库</el-menu-item>
+            <el-menu-item index="goodsInto">商品入库</el-menu-item>
           </el-submenu>
           <el-submenu index="4">
             <template slot="title"><i class="el-icon-star-on"></i>后台管理</template>

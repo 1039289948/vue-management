@@ -13,6 +13,7 @@ const OrderList = r => require.ensure([], () => r(require('../page/OrderList')),
 
 const addGoodsView = r => require.ensure([], () => r(require('../page/AddGoodsView')), 'AddGoodsView');
 const GoodsListView = r => require.ensure([], () => r(require('../page/GoodsListView')), 'GoodsListView');
+const GoodsIntoView = r => require.ensure([], () => r(require('../page/GoodsIntoView')), 'GoodsIntoView');
 
 
 
@@ -39,17 +40,25 @@ export default new Router({
           component: GoodsListView,
           meta: ['数据统计', '商品统计'],
         },{
+          path: '/intoManagement',
+          component: IntoManagement,
+          meta: ['数据统计', '入库统计'],
+        },{
           path: '/OutputManagement',
           component: OutputManagement,
-          meta: ['数据管理', '出库管理'],
+          meta: ['数据统计', '出库管理'],
         },{
           path: '/InventoryManagement',
           component: InventoryManagement,
-          meta: ['数据管理', '库存管理'],
+          meta: ['数据统计', '库存管理'],
         },{
           path: '/OrderList',
           component: OrderList,
-          meta: ['数据管理', '订单管理'],
+          meta: ['数据统计', '订单管理'],
+        },{
+          path: '/goodsInto',
+          component: GoodsIntoView,
+          meta: ['商品管理', '商品入库'],
         },{
           path: '/addGoods',
           component: addGoodsView,
